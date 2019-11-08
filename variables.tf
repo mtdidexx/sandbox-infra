@@ -16,7 +16,6 @@ variable "machine_tier" {
 variable "services" {
   type = list(string)
 
-  //  remember that these services are used by the gdos-* projects, not the k8s ones
   default = [
     "cloudtrace.googleapis.com",
     "stackdriver.googleapis.com",

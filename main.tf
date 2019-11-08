@@ -2,7 +2,7 @@
 # https://www.terraform.io/docs/providers/google/index.html
 
 provider "google" {
-  credentials = "${file("./creds/gdos-mdonahue-sb-53dce8cdc496.json")}"
+  credentials = file("./creds/gdos-mdonahue-sb-53dce8cdc496.json")
   project = var.project
   region = var.region
 }
